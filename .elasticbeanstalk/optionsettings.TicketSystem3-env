@@ -14,7 +14,7 @@ RollingUpdateEnabled=false
 ELBScheme=public
 ELBSubnets=
 Subnets=
-VPCId=1
+VPCId=
 
 [aws:elasticbeanstalk:application]
 Application Healthcheck URL=
