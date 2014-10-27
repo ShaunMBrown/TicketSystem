@@ -49,8 +49,8 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
+  database: ebdb #<%= ENV['RDS_DB_NAME'] %>
+  username: ebroot #<%= ENV['RDS_USERNAME'] %>
+  password: password #<%= ENV['RDS_PASSWORD'] %>
+  host: aau2r385jhjw5q.c7uotqbqapu4.us-west-1.rds.amazonaws.com #<%= ENV['RDS_HOSTNAME'] %>
+  port: 3306 #<%= ENV['RDS_PORT'] %>
