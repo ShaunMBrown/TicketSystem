@@ -1,5 +1,6 @@
 [global]
 ApplicationName=TicketSystem3
+ApplicationVersionName=git-d5570c8ec53e08672f377386f6bca4fd58cb3184-1414390983414
 AwsCredentialFile=C:\Users\Shaun\.elasticbeanstalk\aws_credential_file
 DevToolsEndpoint=git.elasticbeanstalk.us-west-1.amazonaws.com
 EnvironmentName=TicketSystem3-env
