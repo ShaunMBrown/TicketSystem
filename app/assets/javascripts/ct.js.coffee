@@ -2,10 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-
-$(".twoBoxes").mouseenter(function()
-{
-$(this).fadeTo(500,1);
-$(this).siblings().fadeTo(500, 0.5);
-});    
-});
+$(document).ready ->
+  $(".twoBoxes").mouseenter ->
+    $(this).fadeTo 500, 1
+    $(this).siblings().fadeTo 500, 0.5
+    return
+  return
