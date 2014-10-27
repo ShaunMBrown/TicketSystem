@@ -89,5 +89,5 @@ production:
   pool: 5
   username: ebroot
   password: password
-  host: aa157o3aoi9he56.c7veyzpug82x.us-west-2.rds.amazonaws.com #localhost
+  host: aa1ptetr2v1wrn4.c7uotqbqapu4.us-west-1.rds.amazonaws.com #localhost
   port: 3306
