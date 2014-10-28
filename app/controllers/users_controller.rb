@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.order(:email) # SMB 102814 1506 added
+    #@users = User.all # SMB 102814 1506 removed
   end
 
   # GET /users/1
@@ -28,7 +29,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to users_url, notice: "User #{ @user.email } was successfully created." } # SMB 102814 1503 added
+        #format.html { redirect_to @user, notice: 'User was successfully created.' } # SMB 102814 1503 removed
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -42,7 +44,8 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to users_url, notice: "User #{ @user.email } was successfully updated." } # SMB 102814 1505 added
+        #format.html { redirect_to @user, notice: 'User was successfully updated.' } # SMB 102814 1505 removed
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
