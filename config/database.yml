@@ -62,7 +62,7 @@ development:
   reconnect: false
   database: ebdb
   pool: 5
-  username: ebroot
+  username: root
   password: password
   host: localhost
   port: 3306
@@ -76,7 +76,7 @@ test:
   reconnect: false
   database: mysql_test
   pool: 5
-  username: ebroot
+  username: root
   password: password
   host: localhost
   port: 3306
