@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  
+  skip_before_action :authorize # SMB added 102814
+
   def new
   end
 
